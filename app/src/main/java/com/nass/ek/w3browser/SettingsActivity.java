@@ -67,10 +67,6 @@ public class SettingsActivity extends AppCompatActivity {
         Runtime.getRuntime().exit(0);
     }
 
-    public void startSystemSettings(View v){
-        startActivity(new Intent(Settings.ACTION_SETTINGS));
-    }
-
     public void hideKeyboard(View v) {
         InputMethodManager imm = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
 

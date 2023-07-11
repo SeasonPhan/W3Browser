@@ -42,10 +42,6 @@
             android:name=".SettingsActivity"
             android:windowSoftInputMode="stateHidden"
             android:configChanges="orientation|screenSize|keyboardHidden|uiMode"/>
-        <activity
-            android:name=".SupportActivity"
-            android:windowSoftInputMode="stateHidden"
-            android:configChanges="orientation|screenSize|keyboardHidden|uiMode"/>
         <receiver android:name=".StartActivityOnBootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

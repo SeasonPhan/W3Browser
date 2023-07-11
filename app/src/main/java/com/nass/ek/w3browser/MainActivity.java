@@ -93,21 +93,9 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                     if (PwInput.equals("exit")) {
                         finish();
                     }
-                    else if (PwInput.equals("h")) {
-                        Intent startSupportActivityIntent = new Intent(getApplicationContext(), SupportActivity.class);
-                        startActivity(startSupportActivityIntent);
-                    }
                     else if (PwInput.equals(PASSWORD)) {
                         Intent startSettingsActivityIntent = new Intent(getApplicationContext(), SettingsActivity.class);
                         startActivity(startSettingsActivityIntent);
-                    }
-                    else if (PwInput.equals("teamviewer")) {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + tvUri));
-                        startActivity(intent);
-                    }
-                    else if (PwInput.equals("anydesk")) {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + adUri));
-                        startActivity(intent);
                     }
                      else {
                         checkPassword(getString(R.string.code_or_help));

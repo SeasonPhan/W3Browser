@@ -132,28 +132,10 @@
         android:paddingEnd="10dp"
         android:paddingRight="10dp">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start|center_vertical"
-            android:text="@string/copyright"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="12sp" />
-
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/systemSettingsButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="end"
-            android:contentDescription="@string/system_settings_button"
-            android:onClick="startSystemSettings"
-            app:srcCompat="@android:drawable/ic_menu_manage" />
 
         <ImageButton
             android:id="@+id/settingsSaveButton"
