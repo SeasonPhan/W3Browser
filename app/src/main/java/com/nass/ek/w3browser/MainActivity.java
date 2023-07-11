@@ -99,9 +99,16 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                         checkPassword(getString(R.string.code_or_help));
                     }
                 });
-
+        checkPasswordDialog.setNeutralButton("Refresh", (dialog, id) -> restartApp());
         checkPasswordDialog.setNegativeButton(R.string.cancel, (dialog, id) -> dialog.cancel());
         checkPasswordDialog.show();
+    }
+
+    private void restartApp() {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        this.startActivity(intent);
+        Runtime.getRuntime().exit(0);
     }
 
     private void setupSettings() {
