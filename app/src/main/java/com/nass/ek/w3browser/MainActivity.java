@@ -65,7 +65,10 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         }
 
         setupSettings();
-        setupGeckoView();
+        try {
+            setupGeckoView();
+        } catch (Exception e) {
+        }
         commitURL(Website);
 
         //allow opening url from another app
