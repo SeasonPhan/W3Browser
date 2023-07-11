@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     private ProgressBar mProgressView;
     Context context = this;
     private int currentApiVersion;
-    String tvUri = "com.teamviewer.quicksupport.market";
-    String adUri = "com.anydesk.anydeskandroid";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
